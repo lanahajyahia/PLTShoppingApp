@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/img_bag_item"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img_app_icon"
+            android:layout_margin="10dp"></ImageView>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/bag_item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:breakStrategy="balanced"
+                    android:text="item description"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/delete_from_bag_img"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_clear_black_24dp"
+                    android:layout_width="70dp"
+                    android:clickable="true"
+                    android:tint="@android:color/black"
+                    android:layout_height="50dp"></ImageView>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/bag_item_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:breakStrategy="balanced"
+                android:text="item size"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+               >
+
+
+                <TextView
+                    android:id="@+id/bag_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="item price"
+                    android:layout_gravity="bottom"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/item_quantity_inBag"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    app:backGroundColor="@color/white"
+                    android:layout_gravity="bottom"
+                    app:initialNumber="1"
+                    app:finalNumber="10"
+                    android:layout_weight="1"
+                    app:textColor="@android:color/black"
+                    app:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

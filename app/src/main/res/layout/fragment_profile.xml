@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img_register"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:src="@drawable/background_shop_horizontal"></ImageView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_myplt"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/background_horses"></ImageView>
+
+
+        <Button
+            android:id="@+id/logout_btn_profile"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/emptyBagWishlistColor"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="LOGOUT"
+            android:layout_above="@+id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_myplt"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtOrdersDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order details"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="normal"></TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/txtOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order History"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size Guide"
+                android:id="@+id/txtSizeGuide"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_full_name"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+
+    </TextView>
+
+
+</RelativeLayout>

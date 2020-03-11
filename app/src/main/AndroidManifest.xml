@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.plt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Notification.Notification"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/img_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:supportsRtl,android:theme,android:icon">
+        <activity android:name=".Search.SearchActivity"></activity>
+        <activity android:name=".SizeGuide.SizeGuide" />
+        <activity android:name=".OrderStatus.OrderStatus" />
+        <activity android:name=".ItemShowPage.ItemActivity" />
+        <activity android:name=".Shop.CategoryItemsActivity" />
+        <activity android:name=".SignUp.RegisterActivity" />
+        <activity android:name=".Login.LoginActivity" />
+
+        <service
+            android:name=".Service.OrderListen"
+            android:enabled="true" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BottomNivBarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

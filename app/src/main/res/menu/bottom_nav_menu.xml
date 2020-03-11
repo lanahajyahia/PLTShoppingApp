@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/icon_menu_home"
+        android:icon="@drawable/img_navbar_home"
+        android:title="Home"></item>
+
+    <item
+        android:id="@+id/icon_menu_shop"
+        android:icon="@drawable/img_navbar_shop"
+        android:title="Menu"></item>
+
+    <item
+        android:id="@+id/icon_menu_bag"
+        android:icon="@drawable/img_navbar_bag"
+        android:title="Bag"></item>
+
+    <item
+        android:id="@+id/icon_menu_wishlist"
+        android:icon="@drawable/img_navbar_wishlist"
+        android:title="Wishlist"></item>
+
+    <item
+        android:id="@+id/icon_menu_profile"
+        android:icon="@drawable/img_navbar_profile"
+        android:title="My PLT"></item>
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "99265664526",
+    "firebase_url": "https://pltapp-2004d.firebaseio.com",
+    "project_id": "pltapp-2004d",
+    "storage_bucket": "pltapp-2004d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99265664526:android:24ff016ba0bca5bf900e5f",
+        "android_client_info": {
+          "package_name": "com.example.plt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99265664526-dt7abkjt1ghrd2unmhlkumd4ji5v14l0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plt",
+            "certificate_hash": "d02cefa8ad3c0aad35038dac20f856217a47715c"
+          }
+        },
+        {
+          "client_id": "99265664526-645o435e25admjesi57puv3l0muiv8b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK8_fCmQvmIW9XwpxtAT2xoUhKi9YgBFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99265664526-645o435e25admjesi57puv3l0muiv8b3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

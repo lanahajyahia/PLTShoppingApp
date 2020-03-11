@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/linearLayout_wishlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/items_amount_WL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0 item"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/btn_clearAll_wl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:clickable="true"
+            android:text="Clear All"
+            android:textColor="@color/emptyBagWishlistColor"></TextView>
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlist_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/empty_screen_wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_screen_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:tint="@color/emptyBagWishlistColor"
+            android:src="@drawable/img_navbar_wishlist" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Your wishlist is empty"
+            android:textColor="@color/emptyBagWishlistColor"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Love a product? Add it to your wishlist by tapping the heart"
+            android:textSize="25sp"
+             />
+
+
+        <Button
+            android:id="@+id/start_shop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/emptyBagWishlistColor"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="START SHOPPING"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</RelativeLayout>

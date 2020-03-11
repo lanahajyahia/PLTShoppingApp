@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_light_background"
+    tools:context=".Login.LoginActivity">
+
+    <include
+        layout="@layout/app_image"
+        android:id="@+id/img_app"></include>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_below="@id/img_app"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:layout_margin="5dp">
+    <EditText
+        android:id="@+id/edtLoginPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_app"
+        android:layout_weight="1"
+        android:hint="Phone number"
+        android:digits="0123456789+"
+        android:inputType="phone"
+        android:textColor="@color/darkpink"
+        android:textColorHint="@color/pink"
+        android:textSize="19sp"
+        android:ems="10"
+        />
+
+
+    <EditText
+        android:id="@+id/edtLoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/edtLoginPhone"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPassword"
+        android:textColor="@color/darkpink"
+        android:textColorHint="@color/pink"
+        android:textSize="19sp"
+        android:ems="10"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_under_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_below="@+id/edtLoginPass"
+        >
+
+        <CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remember me"
+            android:textColor="@color/darkpink"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txtForgetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:text="Forget Password?"
+            android:textColor="@color/darkpink"
+            android:textSize="19sp"
+            android:layout_weight="1"
+            android:gravity="end"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="SIGN IN"
+        android:layout_gravity="center"
+        android:textColor="@color/darkpink"
+        />
+
+
+
+</LinearLayout>
+</RelativeLayout>
